@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+       figcaption {
+        color:black;
+        font-style: italic;
+        padding: 5px;
+        text-align: center;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 20%;
+        padding: 20px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      </style>
+      
+  <style>
+    
+     ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow:hidden;
+       background-color: #FFD700;
+     }
+     
+     li {
+       float: left;
+     }
+     
+     li a {
+       display: block;
+       color: black;
+       text-align: center;
+       padding: 14px 16px;
+       font-size: large;
+       text-decoration: none;
+     }
+     
+     li a:hover {
+       background-color:ghostwhite;
+     }
+     .checked {
+    color: orange;
+  }
+  
+     </style>
+     
+    
+     </head>
+  
+  <body>
+     
+  <ul>
+     <li><a class="active" href="home.html"><b>Home</b></a></li>
+     <li><a href="couriers.html"><b>Courier</b></a></li>
+     <li><a href="staff.html"><b>Staff</b></a></li>
+     <li><a href="schedule.html"><b>Schedule</b></a></li>
+     <li><a href="delivery.html"><b>Delivery</b></a></li>
+   </ul>
+   <br>
+  <div>
+<form action="deliverydetails.php" method='post'>
+  <div class="container">
+  <h3>Delivery</h3>
+ <hr>
+<label for="couriernumber"><b>Courier Number</b></label>
+    <input type="text" placeholder="Enter courier number" name="couriernumber" class="form-control" id="couriernumber" required>
+<label for="branchname"><b>Branch Name</b></label>
+    <input type="text" placeholder="Enter branch name" name="branchname" class="form-control" id="branchname" required>
+<label for="staffname"><b>Staff Name</b></label>
+    <input type="text" placeholder="Enter staff name" name="staffname" class="form-control" id="staffname" required>
+<label for="deliveredto"><b>Delivered To:</b></label>
+    <input type="text" placeholder="Enter delivered to" name="deliveredto" class="form-control" id="deliveredto" required>
+<label for="date"><b>Delivered On:</b></label>
+  <input type="datetime-local" id="date" name="date">
+	</hr>
+	<br>
+<button type="submit" class="btn btn-success">Submit</button>
+</div>
+</form>
+</body>
+</html>
